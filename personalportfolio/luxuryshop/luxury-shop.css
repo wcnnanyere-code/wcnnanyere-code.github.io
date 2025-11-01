@@ -1,0 +1,853 @@
+/* 🌟 Tema Luxury Nero + Oro */
+*{
+font-family: 'Playfair Display', serif;
+}
+:root {
+  --gold: #d4af37;
+  --gold-hover: #b9972f;
+  --black: #000;
+  --dark: #111;
+  --white: #fff;
+  --transition: all 0.3s ease;
+
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+/* 🔤 Font */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--black);
+  color: var(--gold);
+  line-height: 1.6;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* 🧭 Header */
+header {
+  background: #000;
+  color: gold; /* oro più elegante */
+  padding: 1rem;
+  text-align: center;
+    box-shadow: 0 4px 30px rgba(212, 175, 55, 0.3);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin: 0;
+ border-bottom: 2px solid gold;
+}
+
+nav {
+  margin-top: 0.5rem;
+
+}
+
+nav a {
+  color: var(--gold);
+  margin: 0 0.8rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: var(--gold-hover);
+}
+
+/* 🖼 Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdGhpbmclMjBzdG9yZXxlbnwwfHwwfHx8MA==&fm=jpg&q=60&w=3000') center/cover no-repeat;
+  color: gold;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  border-top: 2px solid gold;
+  box-shadow: 0 4px 30px rgba(212, 175, 55, 0.3);
+  filter: brightness(60%);
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin-top: 50px;;
+  color: white;
+  font-weight: bold;
+}
+
+/* 🟡 Pulsanti */
+.btn {
+  background: gold;
+  color: var(--black);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: var(--transition);
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 5px;
+
+}
+
+.btn:hover {
+  background: var(--gold-hover);
+   transform: scale(1.1);
+
+}
+
+.btn2:hover{
+  background: gold;
+  color: black;
+   transform: scale(1.1);
+
+}
+
+ .btn2{
+  background: transparent ;
+  color: var(--gold);
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: var(--transition);
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 0 12px var(--gold);
+  border: 2px solid gold;
+margin-left: 5px;
+}
+
+/* 📌 Sezioni */
+section {
+  padding: 4rem 2rem;
+}
+
+.intro {
+  text-align: center;
+  background: var(--black);
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.intro p{
+color: white;
+}
+
+/* 🛍 Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+   background: var(--dark);
+   border: 1px solid var(--gold);
+   border-radius: 10px;
+   text-align: center;
+   padding: 1rem;
+   transition: var(--transition);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 320px; /* 🔸 Altezza uguale per tutte */
+ }
+
+.card img {
+   max-width: 100%;
+    height: 100%;
+    object-fit: cover; /* mantiene proporzioni e riempie */
+    border-radius: 8px;
+    border: 2px solid var(--gold);
+}
+
+
+.card h3 {
+  margin-bottom: 0.8rem;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+
+  width: 93%;
+  text-align: center;
+  padding: 0.5rem;
+  transition: var(--transition);
+
+}
+
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(212, 175, 55, 0.25);
+}
+
+/* 📝 Form Contatti */
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background: #1a1a1a;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* 🦶 Footer */
+footer {
+  background: var(--black);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid var(--gold);
+  box-shadow: 0 -2px 20px rgba(212, 175, 55, 0.3);
+  font-size: 0.9rem;
+}
+
+
+
+/* ✅ Responsive per schermi piccoli (smartphone) */
+
+/* 📲 Responsive per tablet (da 601px a 900px) */
+
+
+
+.collection h2{
+  border: 2px solid var(--gold);
+  box-shadow: 0 4px 30px rgba(212, 175, 55, 0.3);
+
+}
+
+.collection a{
+text-decoration: none;
+}
+
+.collection h2:hover{
+
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(212, 175, 55, 0.25);
+  text-decoration: underline;
+  color: var(--gold-hover);
+}
+.cards h3{
+color: gold;
+border: 2px solid var(--gold);
+box-shadow: 0 4px 30px rgba(212, 175, 55, 0.3);
+
+
+}
+.cards a{
+text-decoration:none;
+text-align: center;
+}
+
+.cards h3:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(212, 175, 55, 0.25);
+  text-decoration: underline;
+  color: var(--gold-hover);
+}
+.card-wrapper h3 {
+  margin-bottom: 0.8rem;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  box-shadow: 0 4px 30px rgba(212, 175, 55, 0.3);
+  width: 93%;
+  text-align: center;
+  padding: 0.5rem;
+  transition: var(--transition);
+
+}
+
+.card-wrapper h3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(212, 175, 55, 0.25);
+  text-decoration: underline;
+  color: var(--gold-hover);
+}
+
+.contact_info{
+background: rgb(34, 34, 34);
+}
+
+
+
+.contact-section {
+  background: rgb(34,34,34);
+  color: #d4af37;
+  padding: 4rem 2rem;
+  text-align: left;
+  border-top: 2px solid #d4af37;
+  box-shadow: 0 -4px 20px rgba(212, 175, 55, 0.2);
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.contact_-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-item p,
+.contact-item a {
+  color: #d4af37;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: gold;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: start;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.social-icons a {
+  color: #d4af37;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: black;
+  transform: scale(1.1);
+  background-color: gold;
+}
+
+.contact-item p ,.contact-item p i{
+display: inline;
+
+}
+
+.social-icons i {
+padding: 4px;
+box-shadow: 0 4px 30px rgba(212, 175, 55, 0.3);
+border: 2px solid gold;
+}
+.form input, textarea{
+background: black;
+border: 2px solid gold;
+}
+.form{
+  background: rgb(34,34,34);
+}
+.pre-footer {
+  background: black;
+  color: #d4af37;
+  padding: 4rem 2rem;
+
+  border-top: 2px solid #d4af37;
+  box-shadow: 0 -4px 20px rgba(212, 175, 55, 0.2);
+}
+
+.pre-footer h2{
+text-align: left;
+}
+.pre-footer p{
+color: white;
+}
+.list ul , li{
+color: white;
+text-decoration:none;
+list-style-type: none;
+}
+.list a{
+text-decoration: none;
+}
+.list input{
+width: 80% ;
+height: 30px;
+background: black;
+border: 2px solid gold;
+}
+.btn3 {
+  background: var(--gold);
+  color: var(--black);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: var(--transition);
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.btn3:hover {
+  background: var(--gold-hover);
+   transform: scale(1.1);
+
+}
+
+.about{
+
+background: rgb(34,34,34);
+border-top: 2px solid gold;
+border-bottom: 2px solid gold;
+}
+
+.about h2{
+color: gold;
+text-align: left;
+font-size: 1.7rem;
+}
+.about p{
+color:white;
+font-size: 1.3rem;
+}
+
+
+.hyper h3 {
+  display: inline-block;
+  margin-right: 150px; /* distanza tra gli elementi */
+  margin-bottom: 5px;
+  font-size: 2.0rem;
+}
+.paragraph p{
+display: inline-block;
+  margin-right: 50px;
+  color:grey;
+  margin-top: -10px;
+}
+.about img{
+
+    max-width: 70%;
+    height: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--gold);
+     box-sizing: border-box;
+
+
+}
+/* Contenitore */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left; /* centra tutto */
+  gap: 5rem; /* distanza tra le card */
+  padding: 2rem;
+
+}
+
+.card2 {
+  width: 200px; /* oppure max-width se vuoi più flessibilità */
+  background: #111;
+  text-align: center;
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  padding: 1rem;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+.card2 img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  border: 2px solid var(--gold);
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.card2 h3 {
+  margin-bottom: 0.5rem;
+  color: var(--gold);
+}
+
+.card2 p {
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.pics{
+   display: flex;
+   flex-direction: column; /* 👈 le mette in colonna */
+   align-items: left;    /* le centra orizzontalmente */
+   gap: 2rem;              /* distanza verticale tra le card */
+   padding: 2rem;
+}
+
+
+
+.card3 {
+  width: 200px; /* oppure max-width se vuoi più flessibilità */
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.card3:hover {
+  transform: translateY(-5px);
+
+}
+
+.card3 img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  border: 2px solid var(--gold);
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.card3 h3 {
+  margin-bottom: 0.5rem;
+  color: var(--gold);
+}
+
+.card3 p {
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+.spec{
+  position: absolute;
+  top: 150px;       /* regola la distanza dall’alto */
+  right: 30%;        /* la sposta a destra */
+  max-width: 30%;   /* limita la larghezza per non occupare tutto */
+  text-align: left; /* testo allineato a sinistra */
+  color: gold;
+  display: flex;
+  flex-direction: column;
+   gap: 0.2rem; /* 👈 ridotto (prima era 1rem) */
+    padding: 0;
+}
+.spec p{
+color: #ccc;
+}
+.spec img{
+width:60px;
+box-sizing: border-box;
+box-shadow: 0 5px 5px;
+border: 2px solid gold;
+}
+.select{
+margin-bottom:10px;
+width: 150px;
+height: 50px;
+border: 2px solid gold;
+}
+.select:hover{
+cursor:pointer;
+width: 150px;
+height: 50px;
+border: 2px solid gold;
+}
+.spec p , h3{
+  margin: 0.5rem 0; /* 👈 quasi attaccati */
+  line-height: 1.2;
+}
+
+.btn4 {
+  background: gold;
+  color: var(--black);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: var(--transition);
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 5px;
+
+}
+
+.btn4:hover {
+  background: var(--gold-hover);
+   transform: scale(1.1);
+
+}
+
+
+@media  only screen and (max-width: 550px){
+
+  /* Header: impila logo e menu */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+     width: 100vw;
+
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+
+  }
+
+  nav a {
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  }
+
+  /* Hero section: riduci padding e grandezza font */
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+  }
+
+  .btn , .btn2{
+    width: 20%;
+    text-align: center;
+    height: 70%;
+
+  }
+
+
+  /* Cards: una per riga */
+  .cards{
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+
+  /* Contact section: impila elementi */
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .contact-item i {
+    font-size: 1.2rem;
+  }
+
+  .contact-item p {
+    font-size: 0.9rem;
+  }
+
+  iframe {
+    height: 250px;
+  }
+  .list input{
+  width: 80% ;
+  height: 30px;
+  background: black;
+  border: 2px solid gold;
+  }
+  .btn2{
+  width: 20%;
+  margin-top: 10px;
+  }
+  .card-wrapper h3{
+  width: 95.5%;
+  }
+
+.hyper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px;
+
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px; /* distanza tra i testi */
+  color: grey;
+  margin-top: -10px;
+}
+.exclusive{
+ transform: translateX(83px);
+}
+.happy{
+ transform: translateX(18px);
+}
+.years{
+ transform: translateX(-60px);
+}
+  .spec {
+    max-width: 90% !important;
+    text-align: left!important;
+    align-items: right !important;
+    margin-top: 9em !important;
+    transform: translateX(300px);
+  }
+.btn4{
+height: 5.6%;
+}
+
+}
+
+@media (min-width: 551px) and (max-width: 900px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+    width: 100%;
+
+  }
+
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .contact-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  iframe {
+    height: 300px;
+  }
+.hyper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px;
+
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px; /* distanza tra i testi */
+  color: grey;
+  margin-top: -10px;
+}
+.exclusive{
+ transform: translateX(32px);
+}
+.happy{
+ transform: translateX(6px);
+}
+.years{
+ transform: translateX(-37px);
+}
+.spec {
+    max-width: 90% !important;
+    text-align: left!important;
+    align-items: right !important;
+    margin-top: 1em !important;
+    transform: translateX(300px);
+  }
+
+}
